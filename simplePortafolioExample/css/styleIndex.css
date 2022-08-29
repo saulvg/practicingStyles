@@ -1,3 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GENERIC*/
+html {
+    --backgroundWeb: rgb(204, 255, 255);
+    --backgroundHeader: rgba(204, 255, 255, 0.705);
+    --text: black;
+    --link: rgb(189, 8, 189);
+    --hoverLink: rgb(243, 57, 243);
+    --shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+
+
+    background-color: var(--backgroundWeb);
+
+}
+
 body {
-    background-color: aqua;
+    min-height: 100vh;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--link);
+    text-shadow: var(--shadow);
+}
+
+a:hover {
+    color: var(--hoverLink);
+}
+
+/* HEADER */
+
+body>header {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+body>header nav {
+    width: 50%;
+    position: fixed;
+    background-color: var(--backgroundHeader);
+    min-width: max-content;
+
+}
+
+body>header menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 1rem;
+
+
+}
+
+body>header menu li {
+    margin: 0.5rem;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+body>header menu a {
+    text-shadow: var(--shadow);
+    font-size: 2rem;
+    font-family: monospace, cursive, sans-serif;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+
+}
+
+
+/* MAIN */
+
+/* aboutMe */
+#aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    font-family: sans-serif;
+}
+
+#aboutMe img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+#aboutMe>section {
+    text-align: center;
+    margin: 2rem;
+}
+
+#aboutMe>section>h1 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+#aboutMe>section>h2 {
+    font-size: 1.5rem;
+}
+
+#aboutMe>section>p {
+    margin: 1.5rem;
 }
