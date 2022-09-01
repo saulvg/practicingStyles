@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <title>Craft your burger</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./indexStyle.css" />
-  </head>
-  <body>
-    <main>
-      <form>
-        <fieldset id="craftBurger">
-          <h1>Craft your Burger</h1>
-          <section>
-            <h2>Ingredients</h2>
+
+<head lang="en">
+  <title>Craft your burger</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./indexStyle.css" />
+</head>
+
+<body>
+  <main>
+    <form>
+      <fieldset id="craftBurger">
+        <h1>Craft your Burger</h1>
+        <section>
+          <h2>Ingredients</h2>
+          <div id="typeBread">
             <label>
               Regular bread
               <input type="radio" name="bread" required />
@@ -20,12 +23,18 @@
               Wholemeal bread
               <input type="radio" name="bread" required />
             </label>
+          </div>
+          <div id="typeMeat" class="customSelect1">
+            Meat &rarr;
             <select name="meat" id="meat">
               <option value="oneM" selected>1 meat</option>
               <option value="twoM">2 meat</option>
               <option value="threeM">3 meat</option>
               <option value="vegan">Vegan</option>
             </select>
+          </div>
+          <div id="extraIngredients">
+
             <label for="lettuce">Lettuce</label>
             <input id="lettuce" type="checkbox" />
 
@@ -46,65 +55,68 @@
 
             <label for="egg">Fried egg</label>
             <input id="egg" type="checkbox" />
-          </section>
-          <section>
-            <h2>Size</h2>
-            <label for="S">
-              S
-              <input type="radio" name="hamburgerSize" required />
-            </label>
-            <label for="M">
-              M
-              <input type="radio" name="hamburgerSize" required />
-            </label>
-            <label for="L">
-              L
-              <input type="radio" name="hamburgerSize" required />
-            </label>
-            <label for="XL">
-              XL
-              <input type="radio" name="hamburgerSize" required />
-            </label>
-            <label for="XXL">
-              XXL
-              <input type="radio" name="hamburgerSize" required />
-            </label>
-          </section>
-        </fieldset>
-        <fieldset id="deliveryData">
-          <h1>Delivery data</h1>
-          <label for="name">
-            Name:
-            <input type="text" placeholder="Write your name here" required />
+          </div>
+        </section>
+        <section>
+          <h2>Size</h2>
+          <label for="S">
+            S
+            <input type="radio" name="hamburgerSize" required />
           </label>
-          <label for="city">
-            City:
-            <input type="text" placeholder="city" required />
+          <label for="M">
+            M
+            <input type="radio" name="hamburgerSize" required />
           </label>
-          <label for="phone">
-            Phone Number:
-            <input type="number" required />
+          <label for="L">
+            L
+            <input type="radio" name="hamburgerSize" required />
           </label>
-          <label for="address">
-            Address:
-            <input type="text" placeholder="Street/Portal/Flat&Door" required />
+          <label for="XL">
+            XL
+            <input type="radio" name="hamburgerSize" required />
           </label>
-          <label for="specialInstructions">
-            Special Instructions:
-            <textarea cols="40" rows="7"></textarea>
+          <label for="XXL">
+            XXL
+            <input type="radio" name="hamburgerSize" required />
           </label>
-        </fieldset>
-        <fieldset id="paymentMethod">
-          <h1>Payment method</h1>
+        </section>
+      </fieldset>
+      <fieldset id="deliveryData">
+        <h1>Delivery data</h1>
+        <label for="name">
+          Name:
+          <input type="text" placeholder="Write your name here" required />
+        </label>
+        <label for="city">
+          City:
+          <input type="text" placeholder="city" required />
+        </label>
+        <label for="phone">
+          Phone Number:
+          <input type="number" required />
+        </label>
+        <label for="address">
+          Address:
+          <input type="text" placeholder="Street/Portal/Flat&Door" required />
+        </label>
+        <label for="specialInstructions">
+          Special Instructions:
+          <textarea cols="40" rows="7"></textarea>
+        </label>
+      </fieldset>
+      <fieldset id="paymentMethod">
+        <h1>Payment method</h1>
+        <div class="customSelect1">
           <select>
             <option value="cashOnDelivery">Cash on Delivery</option>
             <option value="creditCar">Credit Card</option>
             <option value="payPal">PayPal</option>
           </select>
-        </fieldset>
-        <button>Order</button>
-      </form>
-    </main>
-  </body>
-  <footer></footer>
+        </div>
+      </fieldset>
+      <button>Order</button>
+    </form>
+  </main>
+</body>
+
 </html>
