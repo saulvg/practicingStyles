@@ -15,6 +15,7 @@ main {
 
 
     text-align: center;
+    font-weight: 700;
 }
 
 fieldset {
@@ -35,6 +36,8 @@ input {
 select {
     cursor: pointer;
 }
+
+/* MAIN/FORM */
 
 /* CraftBurger */
 #craftBurger h2 {
@@ -83,4 +86,50 @@ select {
 
 .customSelect1 select:hover {
     background-color: #B1E8CD;
+}
+
+/* deliveryData */
+
+#deliveryData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#deliveryData label {
+    display: flex;
+    flex-direction: column;
+
+    width: 35%;
+    margin-bottom: 1rem;
+}
+
+#deliveryData label input {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    height: 1.5rem;
+    border-radius: 10px;
+}
+
+#deliveryData label textarea {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+button {
+    padding: 0.3rem;
+    margin: 1rem;
+    width: 5rem;
+    background: rgb(36, 36, 90);
+    color: white;
+    box-shadow: 1px 2px rgb(3, 3, 3);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgba(7, 7, 59, 0.733);
 }
