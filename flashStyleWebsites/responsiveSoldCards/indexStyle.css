@@ -5,9 +5,109 @@
 }
 
 /* GENERAL */
+body{
+    --colorFontYellow: rgb(255, 208, 0);
+    --colorFontGrey :rgb(94, 94, 94);
+
+    font-family:sans-serif;
+    color: rgb(94, 94, 94);
+}
+a{
+    text-decoration: none;
+    color: var(--colorFontGrey);
+}
+li{
+    list-style: none;
+}
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+header>h1{
+    font-size: 1rem;
+}
+header menu{
+    display: flex;
+}
+header menu li{
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: 0.3rem;
+}
+header menu li:not(li:last-child){
+    text-transform: uppercase;
+}
+
+
+header menu li:last-child a{
+    background-color: var(--colorFontYellow);
+    border-radius: 25px;
+    padding: 0.15rem 1rem;
+}
 /* MAIN */
 /* intro */
+#intro{
+    background-image: url("./media/car-background.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    gap: 1rem;
+    padding: 0 8rem;
+    text-shadow: 1px 1px 1px black;
+
+}
+#intro>h2{
+    font-size: 2rem;
+    color: white;
+}
+#intro>p:first-of-type{
+    color: var(--colorFontYellow);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#intro p:not(p:first-of-type){
+    color: rgb(219, 219, 219);
+    font-weight: lighter;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#intro .movile{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    color: black;
+    border-radius: 25px;
+    display: none; 
+}
 /* varietyCar */
+#varietyCar{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+}
+#varietyCar>h2{
+    color: black;
+}
+#varietyCar>p{
+    text-align: center;
+}
+#varietyCar>div{
+    
+}
 /* idealCar */
 /* whyUs */
 /* FOOTER */
